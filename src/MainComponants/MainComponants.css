@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Gemunu+Libre:wght@700&family=Overpass:wght@700&family=Space+Mono:wght@700&display=swap");
+
+.Container {
+  width: 327px;
+  height: 360px;
+  margin: 154px auto;
+  border-radius: 15px;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  /* display: none; */
+}
+.LogoDiv {
+  width: 40px;
+  height: 40px;
+  background-color: #232a34;
+  border-radius: 50%;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+.Logo {
+  transform: translate(+65%, +65%);
+}
+.headerText {
+  height: 37px;
+  width: 279px;
+  margin-left: 24px;
+  margin-top: 1.5rem;
+  font-family: "Overpass";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+}
+.secondText {
+  height: 66px;
+  width: 279px;
+  margin-top: 0.5rem;
+  margin-left: 24px;
+  font-family: "Overpass";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #969fad;
+}
+.containerForRateNumbers {
+  height: 42px;
+  width: 341px;
+  margin-left: 24px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+}
+@media only screen and (min-width: 1440px) {
+  .Container {
+    height: 416px;
+    width: 412px;
+    border-radius: 30px;
+  }
+
+  .Logo {
+    height: 48px;
+    width: 48px;
+  }
+
+  .headerText {
+    height: 43px;
+    width: 220px;
+    font-family: "Overpass";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .secondaryText {
+    height: 72px;
+    width: 340px;
+    font-family: "Overpass";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .containerForRateNumbers {
+    height: 51px;
+    width: 341px;
+  }
+}

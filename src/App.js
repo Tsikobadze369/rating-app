@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import MainComponants from "./MainComponants/MainComponants";
+import SecondContainer from "./SecondContainer/SecondContainer";
 
 function App() {
+  const [selectedRate, setSelectedRate] = useState(0);
+  const [isShown, setIsShown] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!isShown && (
+        <MainComponants
+          rate={setSelectedRate}
+          selectedKey={selectedRate}
+          submited={setIsShown}
+        />
+      )}
+
+      {isShown && <SecondContainer result={selectedRate} />}
     </div>
   );
 }
